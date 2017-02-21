@@ -1,9 +1,16 @@
 import java.io.*;
 public class kolmas{
+
+static double keskmine (double a1, double a2, double a3, double a4, double a5){
+return (a1/2+a2+a3+a4+a5/2)/4;
+}
+
   public static void main(String[] args) throws IOException{
     BufferedReader lugeja=new BufferedReader(
     new FileReader("andmed.txt")
     );
+
+    PrintWriter kirjutaja = new PrintWriter(new FileWriter("kuup2ev.txt"));
 
     int loendur=0;
     String rida=lugeja.readLine();
@@ -19,15 +26,16 @@ public class kolmas{
       float a4=Integer.parseInt(m[4]);
       float a5=Integer.parseInt(m[5]);
 
-      double keskmine=(a1/2+a2+a3+a4+a5/2)/4;
 
-      System.out.println(m[0]+" kuupäeva keskmine temperatuur oli "+keskmine);
+
+      kirjutaja.println(m[0]+" kuupäeva keskmine temperatuur oli "+keskmine(a1,a2,a3,a4,a5));
 
 
 
     rida = lugeja.readLine();
   }
     lugeja.close();
+    kirjutaja.close();
   }
 }
 

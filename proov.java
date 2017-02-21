@@ -1,8 +1,13 @@
 
 public class proov{
-	public static void main(String[] args){
+
+		static double keskmine(double summa, double jagaja){
+			return summa/jagaja;
+		}
+		public static void main(String[] args){
 		int[] arvud={65, 58, 103, 86};
 		double summa=0;
+
 		for(int i=0; i<arvud.length; i++){
 			if(i==0){
 				summa=arvud[i]/2.0+summa;
@@ -11,11 +16,13 @@ public class proov{
 			} else {
 			summa=arvud[i]+summa;
 		}
+		double jagaja=arvud.length-1;
 	}
-double keskmine=summa/(arvud.length-1);
 
 
-		System.out.println("Antud arvude kronoloogiline keskmine on "+keskmine);
+
+
+		System.out.println("Antud arvude kronoloogiline keskmine on "+keskmine(summa, arvud.length-1));
 
 
 	}
