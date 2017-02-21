@@ -15,3 +15,4 @@ public class ylesanne1{
          return Math.sqrt(korrutis());
      }
 }
+
