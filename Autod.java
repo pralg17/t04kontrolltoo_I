@@ -10,15 +10,15 @@ public class Autod{
   }
 
   public double sekundid(){
-    return b*c;
+    return a+(b*c);
   }
 
   public double minutid(){
-    return b*d;
+    return a+(b*d);
   }
 
   public double tunnid(){
-    return b*e;
+    return a+(b*e);
   }
 
   public String toString(){
