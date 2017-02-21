@@ -1,0 +1,7 @@
+01-02 kuupäeva keskmine temperatuur oli 10.25
+02-02 kuupäeva keskmine temperatuur oli 5.625
+03-02 kuupäeva keskmine temperatuur oli 6.875
+04-02 kuupäeva keskmine temperatuur oli 3.375
+05-02 kuupäeva keskmine temperatuur oli 3.125
+06-02 kuupäeva keskmine temperatuur oli 8.5
+07-02 kuupäeva keskmine temperatuur oli 5.875
