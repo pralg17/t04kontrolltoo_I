@@ -1,4 +1,7 @@
 import java.util.Scanner;
+import java.io.*;
+import java.net.*;
+
 public class KT{
 	//Esimese punkti ülesanne
 	public static float KeskmineI(float[] EsiKesK){
@@ -18,14 +21,15 @@ public class KT{
 	}
 	
 	//Keskmise leidmiseks luban ainult 3 argumenti kilomeetri kohta, ehk kokku 6 
-	public static void main(String[] args){
+	public static void main(String[] args) throws IOException{
 		//Esimese punkti ülesanne
 		if(args.length<6){
 			System.out.println("Liiga vähe argumente esimese ülesande täitmiseks. Peab olema kuus arvu!");
 		} else if(args.length>6){
 			System.out.println("Liiga palju argumente esimese ülesande täitmiseks. Peab olema kuus arvu!");
-		}else {
+		} else {
 			//Esimese kilomeetri keskmised kiirused
+			System.out.println("Esimene ülesanne-------------------------------------------");
 			float arv1=Float.parseFloat(args[0]);
 			float arv2=Float.parseFloat(args[1]);
 			float arv3=Float.parseFloat(args[2]);
@@ -46,8 +50,9 @@ public class KT{
 		}
 	
 		//Teise punkti ülesanne
+		System.out.println("Teine ülesanne-------------------------------------------");
 		double[] kilomeeterKesk = new double[5];
-		
+		//See kord küsin kasutajalt
 		Scanner scan = new Scanner(System.in);
 		for (int i = 0; i < kilomeeterKesk.length; i++)  {
 			System.out.print("Sisesta kilomeetri läbimise keskmine kiirus: ");
@@ -55,7 +60,40 @@ public class KT{
 		}
 		
 		double LoppKesk3=KokkuKeskmine(kilomeeterKesk);
-		System.out.print("5 kilomeetri läbimise kesmine kiirus on: "+LoppKesk3);
+		System.out.println("5 kilomeetri läbimise kesmine kiirus on: "+LoppKesk3);
+		
+		//Kolmanda punkti ülesanne
+		System.out.println("Kolmas ülesanne-------------------------------------------");
+		
+		//BufferedReader lugeja=new BufferedReader(new FileReader("KeskmisteVastus.txt"));
+		//String rida=lugeja.readLine();
+		//String oigevastus = "Veebiaadressilt loetud kilomeetriste lõikude kogu teekonna keskmine kiirus on: 13.157752";
+		//lugeja.close(); 
+		//if(rida.equals("Veebiaadressilt loetud kilomeetriste lõikude kogu teekonna keskmine kiirus on: 13.157752")){
+		//	System.out.println("Õige vastus");}
+		//if(!rida.equals("Veebiaadressilt loetud kilomeetriste lõikude kogu teekonna keskmine kiirus on: 13.157752")){
+			//System.out.println("Võib arvutada");
+			//lugeja.close(); 
+			BufferedReader lugeja2 = new BufferedReader(new InputStreamReader(
+			new URL("http://www.tlu.ee/~matu350/KT_keskmised%20kiirused.txt").openConnection().getInputStream()
+			));
+			String rida2=lugeja2.readLine();
+			PrintWriter kirjutaja=new PrintWriter(new FileWriter("KeskmisteVastus.txt"));
+			
+			float kokku=0;
+			int loendur=1;
+			while(rida2!=null){
+				System.out.println(rida2);
+				float average = Float.parseFloat(rida2);
+				kokku = ((kokku+average)/loendur);
+				rida2=lugeja2.readLine();
+				loendur++;
+			}
+			System.out.println("Keskmine: "+kokku);
+			kirjutaja.println("Veebiaadressilt loetud kilomeetriste lõikude kogu teekonna keskmine kiirus on: "+kokku);
+			kirjutaja.close();
+			lugeja2.close(); 
+		//}
 		
 	}
 }
