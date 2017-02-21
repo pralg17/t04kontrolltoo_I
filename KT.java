@@ -16,7 +16,6 @@ public class KT{
 		} else if(args.length>6){
 			System.out.println("Liiga palju argumente!");
 		}else {
-			System.out.println("Tubli!");
 			//Esimese kilomeetri keskmised kiirused
 			float arv1=Float.parseFloat(args[0]);
 			float arv2=Float.parseFloat(args[1]);
@@ -39,3 +38,7 @@ public class KT{
 
 	}
 }
+
+
+
+
