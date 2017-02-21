@@ -1,6 +1,6 @@
 public class KT{
 	double a, b, c, d;
-	public kaalutudkeskmine(double hinne1, double hinne2, double aine1, double aine2){
+	public KT(double hinne1, double hinne2, double aine1, double aine2){
 		if(hinne1<=0){throw new RuntimeException("Sobimatu hinne");}
 		if(hinne2<=0){throw new RuntimeException("Sobimatu hinne");}
 		if(aine1<=0){throw new RuntimeException("Sobimatu ainepunktide arv");}
