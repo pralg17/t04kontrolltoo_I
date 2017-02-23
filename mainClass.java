@@ -40,9 +40,8 @@ public class mainClass {
                 Auto temp = new Auto(esimeneKaug,teineKaug,esimeneKiirus,teineKiirus);
                 kirjutaja.println(temp);
 
-                kirjutaja.println(temp.uusAsukoht(3,0,0));
-                kirjutaja.println(temp.uusAsukoht(0,5,0));
-                kirjutaja.println(temp.uusAsukoht(0,0,2));
+                kirjutaja.println(temp.uusAsukoht(Integer.parseInt(r[4]),Integer.parseInt(r[5]),Integer.parseInt(r[6])));
+
                 kirjutaja.println("\n");
                 try {
                     rida = lugeja.readLine();
