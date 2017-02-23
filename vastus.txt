@@ -1,0 +1,8 @@
+Esimese auto kaugus on 50.0km, teise auto kaugus on 60.0km ja nende kiirus on 50.0 ja 60.0 km/h
+Nende uued kaugused pärast 3 sekundid, 0 minutid ja 0 tundid on 50.041666666666664km ja 60.05km
+
+
+Esimese auto kaugus on 70.0km, teise auto kaugus on 60.0km ja nende kiirus on 30.0 ja 90.0 km/h
+Nende uued kaugused pärast 0 sekundid, 5 minutid ja 0 tundid on 72.5km ja 67.5km
+
+
