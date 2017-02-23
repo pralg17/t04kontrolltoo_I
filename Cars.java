@@ -12,7 +12,7 @@ public Cars(double kaugus, double kiirus, double sekund, double minut, double tu
 // Teepikkuse arvtamise valem s = v * t
 
 public double sekund(){
-    return round(s+(v*(t1/3600)), 2);
+    return s+(v*(t1/3600));
 }
 public double minut(){
      return s+(v*(t2/60));
