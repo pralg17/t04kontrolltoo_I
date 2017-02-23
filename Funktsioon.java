@@ -10,17 +10,10 @@ public class Funktsioon {
       int eap3 = 3;
       double keskmine = eapKokku(hinne1, hinne2, hinne3, eap1, eap2, eap3);
 
-      //int f = minArv(a, b, c, d, e);
-      //System.out.println("Esimese aine hinne ja EAP-de arv: " + hinne1 + eap1 +"Teine aine hinne ja EAP-de arv: " + hinne2 + eap2 + "Kolmas aine hinne ja EAP-de arv: " +hinne3 + eap3);
+
       System.out.println("Kaalutud keskmine: " + keskmine);
 
    }
-
-
-
-
-   /** returns the minimum of two numbers */
-
 
    public static double eapKokku(int hinne1, int hinne2, int hinne3, int eap1, int eap2, int eap3) {
        int eapd;
