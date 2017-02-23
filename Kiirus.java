@@ -18,7 +18,7 @@ public class Kiirus {
 		System.out.printf("Kahe auto keskmine kiirus on: %.1f\n", ((float) kiirus1 + kiirus2) / 2);
 	}
 
-	public static void keskminineMassiivist(int kiirused[]) {
+	public static void keskminineMassiivist(int... kiirused) {
 		int total = 0;
 		float vastus;
 		for(int aKiirused : kiirused) {
@@ -28,9 +28,9 @@ public class Kiirus {
 
 	}
 
-	public static void main(String[] args) {
+	public static void main(String args[]) {
 		annaKeskmine(70, 90);
-		keskminineMassiivist(new int[]{60, 80, 120, 70 });
+		keskminineMassiivist(60,70,90,120);
 	}
 
 
