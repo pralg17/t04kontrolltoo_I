@@ -18,7 +18,7 @@ public class Auto {
          double uusKaugusEsimeneAuto = kaugus1 + ( tund * kiirus1 + kiirus1 / 60 * minutid + kiirus1 / 3600 * sekundid);
          double uusKaugusTeineAuto = kaugus2  + (tund * kiirus2 + kiirus2 / 60 * minutid + kiirus2 / 3600 * sekundid);
 
-         String str = "Nende uued kaugused on " + uusKaugusEsimeneAuto + "km ja " + uusKaugusTeineAuto + "km";
+         String str = "Nende uued kaugused parast "+sekundid +" sekundid, "+minutid+" minutid ja "+tund+" tundid" +" on " + uusKaugusEsimeneAuto + "km ja " + uusKaugusTeineAuto + "km";
 
          return str;
 
