@@ -10,7 +10,3 @@ public class Kahekeskmine{
         return keskminekiirus;
     }
 }
-/*
-V2ljund:
-Kahe kilomeetri pikkuse l6igu keskmine kiirus on 75.48 km/h
-*/
