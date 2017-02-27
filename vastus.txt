@@ -1,0 +1,3 @@
+Auto on maanteest 12.0 km kaugusel ja kiirus on 90.0 km/h. 3 sekundi pärast on auto 12.0747 km, 5 minuti pärast 12.747 km, ja 2 tunni pärast 192.0 km kaugusel.
+Auto on maanteest 25.0 km kaugusel ja kiirus on 50.0 km/h. 3 sekundi pärast on auto 25.0415 km, 5 minuti pärast 25.415 km, ja 2 tunni pärast 125.0 km kaugusel.
+Auto on maanteest 150.0 km kaugusel ja kiirus on 30.0 km/h. 3 sekundi pärast on auto 150.0249 km, 5 minuti pärast 150.249 km, ja 2 tunni pärast 210.0 km kaugusel.

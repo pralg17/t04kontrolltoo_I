@@ -22,7 +22,7 @@ public class Autod{
 	}
   
 	public String toString(){
-		return "Auto kaugus maantee algusest on "+s+" km ja kiirus "+v+" km/h. Auto asukoht 3 sekundit hiljem on "+sekundid()+" km, 5 minutit hiljem "+minutid()+" km, ja 2 tundi hiljem "+tunnid()+" km.";
+		return "Auto on maanteest "+s+" km kaugusel ja kiirus on "+v+" km/h. 3 sekundit hiljem on auto "+sekundid()+" km, 5 minutit hiljem "+minutid()+" km, ja 2 tundi hiljem "+tunnid()+" km kaugusel.";
 	}
 	
 }
