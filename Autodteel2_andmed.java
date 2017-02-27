@@ -7,7 +7,7 @@
 2 tundi -> 7200 sekundit
 
 2 tundi -> 2 tundi
-3 sekundit -> 0.00833333
+3 sekundit -> 0.00833333 tundi
 5 minutit -> 0.0833333 tundi
 */
 
