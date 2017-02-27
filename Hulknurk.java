@@ -92,15 +92,13 @@ public class Hulknurk{
 		}
 		
 		public boolean veaArvutus(double arv1, double arv2, double vp){
-		
-			if(arv1*(1-vp) <= arv2 && arv2 <= arv1*(1+vp)){
-				System.out.println(arv1*(1-vp)+"  "+arv1*(1+vp));
-				return true;
-				
-			} else {
-				System.out.println(arv1*(1-vp)+"  "+arv1*(1+vp));
-				return false;
 			
+			System.out.println(arv1*(1-vp)+"  "+arv1*(1+vp));
+			
+			if(arv1*(1-vp) <= arv2 && arv2 <= arv1*(1+vp)){
+				return true;
+			} else {
+				return false;
 			}
 			
 		}
