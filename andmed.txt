@@ -1,0 +1,4 @@
+Programmeerimise alused, A, 6,
+Teoreetiline informaatika, B, 4,
+Algoritmid, B, 4,
+Andmebaasid, A, 3
