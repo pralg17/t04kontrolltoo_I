@@ -13,10 +13,11 @@ public class Andmed {
         System.out.println("Kahe kilomeetri pikkuse l6igu keskmine kiirus on "+maa1.Keskmine2KM()+" km/h");
 		System.out.println("Keskmine kiirus on "+kiirused1.Keskminekokku()+" km/h");
         
+		
         String string = "Keskmine kiirus on "+kiirused2.Keskminekokkus()+" km/h";
 		String v6rdus = kiirused3.Keskminekokkuss();
 		if(!string.equals(v6rdus)){
-			 try {
+			try {
             BufferedWriter write = new BufferedWriter ( new FileWriter ("tulemus.txt"));
             write.write(string);
             write.close();
@@ -24,8 +25,8 @@ public class Andmed {
 				e.printStackTrace();
 			}
 		System.out.println("Fail kirjutati üle ja sisu on järgmine: "+string);
-		} else{
-			System.out.println("Faili ei kirjutatud üle ja sisu on järgmine: "+v6rdus);
+		} else {
+		System.out.println("Faili ei kirjutatud üle ja sisu on järgmine: "+v6rdus);
 		}
     }
 }

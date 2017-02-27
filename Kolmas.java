@@ -19,12 +19,12 @@ public class Kolmas{
         double keskmine = 0;
         while(rida !=null){
             double kiirus = Double.parseDouble(rida);
-            summa = summa+kiirus;
+            summa += 1/kiirus;
             kokku++;
             rida = lugeja.readLine();
         }
        lugeja.close();
-       keskmine = summa/kokku;
+       keskmine = kokku/summa;
        return keskmine;
     }      
 }    

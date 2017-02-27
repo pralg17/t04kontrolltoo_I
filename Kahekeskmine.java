@@ -6,7 +6,7 @@ public class Kahekeskmine{
         this.kiirus2 = kiirus2;
     }
     public double Keskmine2KM (){
-        double keskminekiirus = (kiirus1 + kiirus2)/2;
+        double keskminekiirus = 2/(1/kiirus1 + 1/kiirus2);
         return keskminekiirus;
     }
 }
