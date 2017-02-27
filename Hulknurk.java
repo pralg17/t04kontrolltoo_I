@@ -17,7 +17,6 @@ public class Hulknurk{
 			
 			List<Double> kyljed = new ArrayList<Double>();
 			List<Double> rounded = new ArrayList<Double>();
-			System.out.println("Veaprotsent "+veaprotsent+"%");
 			double vp = (double)veaprotsent/100;
 			double kylg = 0;
 			for(int i=1; i<=(x_koord.size()); i++){
@@ -30,14 +29,17 @@ public class Hulknurk{
 				}
 				kyljed.add(kylg);
 			}
-			
+			System.out.println("Kyljed:");
 			for(Iterator<Double> i = kyljed.iterator(); i.hasNext(); ) {
 				double item = i.next();
 				item = round(item);
 				rounded.add(item);
-				System.out.println("Kyljed"+item);
+				System.out.println(item);
 			}
+			System.out.println("");
 			System.out.println(kaugusK(vp));
+			System.out.println("");
+			System.out.println("Vahemik: ");
 			for(int i=1; i<rounded.size();i++){
 			
 				if(!veaArvutus(rounded.get(0), rounded.get(i), vp)){
@@ -61,14 +63,17 @@ public class Hulknurk{
 									Math.pow((y_koord.get(i)-0), 2));
 				kaugused.add(kaugus);
 			}
-			
+			System.out.println("Kaugused:");
 			for(Iterator<Double> i = kaugused.iterator(); i.hasNext(); ) {
 				double item = i.next();
 				item = round(item);
 				rounded.add(item);
-				System.out.println("Kaugused"+item);
+				System.out.println(item);
 			}
-			
+			System.out.println("");
+			System.out.println("Veaprotsent "+vp*100+"%");
+			System.out.println("");
+			System.out.println("Vahemik: ");
 			for(int i=1; i<rounded.size();i++){
 			
 				if(!veaArvutus(rounded.get(0), rounded.get(i), vp)){

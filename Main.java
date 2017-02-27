@@ -7,10 +7,10 @@ public class Main{
 		List<Integer> x = new ArrayList<Integer>();
 		List<Integer> y = new ArrayList<Integer>();
 		Random rand = new Random();
-		for(int i=0; i<3; i++){
+		for(int i=0; i<6; i++){
 			x.add(rand.nextInt(10));
 		}
-		for(int i=0; i<3; i++){
+		for(int i=0; i<6; i++){
 			y.add(rand.nextInt(10));			
 		}
 		Hulknurk h1 = new Hulknurk(x, y);
@@ -23,23 +23,42 @@ public class Main{
 
 /* Console output
 
-[richkaja@greeny kt]$ java Main 50
-x1: 5, y1: 4
-x2: 1, y2: 7
-x3: 7, y3: 8
+[richkaja@greeny t04kontrolltoo_I]$ java Main 50
+x1: 0, y1: 4
+x2: 7, y2: 9
+x3: 8, y3: 2
+x4: 1, y4: 0
+x5: 4, y5: 4
+x6: 9, y6: 4
 
-Veaprotsent 50%
-Kyljed5.0
-Kyljed6.1
-Kyljed4.5
-Kaugused6.4
-Kaugused7.1
-Kaugused10.6
-3.2  9.600000000000001
-3.2  9.600000000000001
+Kyljed:
+8.6
+7.1
+7.3
+5.0
+5.0
+9.0
+
+Kaugused:
+4.0
+11.4
+8.2
+1.0
+5.7
+9.8
+
+Veaprotsent 50.0%
+
+Vahemik:
+2.0  6.0
 Ei asu samal kaugusel!
-2.5  7.5
-2.5  7.5
+
+Vahemik:
+4.3  12.899999999999999
+4.3  12.899999999999999
+4.3  12.899999999999999
+4.3  12.899999999999999
+4.3  12.899999999999999
 On vordkylgne!
 
 
