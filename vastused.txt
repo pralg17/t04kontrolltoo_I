@@ -1,0 +1,2 @@
+Auto kaugus maantee algusest on 150.0 km ja kiirus on 90.0 km/h. Auto asukoht 3 sekundi pärast: 150.07497 km, 5 minuti pärast: 157.497 km, ja 2 tunni pärast: 330.0 km.
+Auto kaugus maantee algusest on 125.0 km ja kiirus on 80.0 km/h. Auto asukoht 3 sekundi pärast: 125.06664 km, 5 minuti pärast: 131.664 km, ja 2 tunni pärast: 285.0 km.
