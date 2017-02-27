@@ -25,3 +25,17 @@ public class k1 {
 	}
 	
 }
+
+/*
+
+Enter marks:
+4
+3
+Enter EAP:
+3
+4
+Weighted average is: 3.4285714285714284
+
+
+
+*/
