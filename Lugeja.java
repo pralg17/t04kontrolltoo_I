@@ -11,7 +11,6 @@ public class Lugeja{
                 return null;
             }
     }
-
     public String Keskminekokkuss()throws IOException{
        BufferedReader lugeja = kysiLugeja();
        String rida = lugeja.readLine();

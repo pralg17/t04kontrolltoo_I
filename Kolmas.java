@@ -26,5 +26,6 @@ public class Kolmas{
        lugeja.close();
        keskmine = kokku/summa;
        return keskmine;
-    }      
+    }
+          
 }    
