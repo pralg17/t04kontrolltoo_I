@@ -1,0 +1,2 @@
+Car 1 new distance: 41.2625 Car 2 new distance: 35.84166666666666
+Car 1 new distance: 41.2625 Car 2 new distance: 35.84166666666666
