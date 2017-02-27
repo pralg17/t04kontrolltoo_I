@@ -9,7 +9,6 @@ public class YL3{
 		double palk11, palk12, palk13, palk14, palk15;
 		double koef_palk11, koef_palk12, koef_palk13, koef_palk14, koef_palk15;
 		double a, b, c, d, e;
-		double koefitsient=1.3;
 		int[] arvud = new int[4];
 		while(rida!=null){
 			String[] m=rida.split(",");
@@ -19,6 +18,7 @@ public class YL3{
 			d = Double.parseDouble(m[3]);
 			e = Double.parseDouble(m[4]);
 			
+			double koefitsient= Math.pow(1.0*b*c*d*e, 5);
 			palk11=a;
 			koef_palk11=a;
 			palk12=palk11*b;
@@ -30,7 +30,7 @@ public class YL3{
 			palk15=palk14*e;
 			koef_palk15=koef_palk14*koefitsient;
 			/*System.out.println("Aasta 2011 palk:"+ palk11 + "\nAasta 2012 palk:" + palk12 + "\nAasta 2013 palk:" + palk13 + "\nAasta 2014 palk:" + palk14 + "\nAasta 2015 palk:" + palk15);*/
-			kirjutaja.println("Ühtlane koefitsient 1.3 \n2011: \nPalk: "+palk11+"\n2012: \nPalk: "+palk12+" || Ühtlase koefitsiendiga:"+koef_palk12+"\n2013: \nPalk: "+palk13+" || Ühtlase koefitsiendiga:"+koef_palk13+"\n2014: \nPalk: "+palk14+" || Ühtlase koefitsiendiga:"+koef_palk14+"\n2015: \nPalk: "+palk15+" || Ühtlase koefitsiendiga:"+koef_palk15);
+			kirjutaja.println("2011: \nPalk: "+palk11+"\n2012: \nPalk: "+palk12+" || Ühtlase koefitsiendiga:"+koef_palk12+"\n2013: \nPalk: "+palk13+" || Ühtlase koefitsiendiga:"+koef_palk13+"\n2014: \nPalk: "+palk14+" || Ühtlase koefitsiendiga:"+koef_palk14+"\n2015: \nPalk: "+palk15+" || Ühtlase koefitsiendiga:"+koef_palk15);
 			break;
 		}
 		failist.close();
