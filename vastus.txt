@@ -1,0 +1,10 @@
+2011: 
+Palk: 1000.0
+2012: 
+Palk: 1200.0 || Ühtlase koefitsiendiga:1313.1658832117762
+2013: 
+Palk: 1200.0 || Ühtlase koefitsiendiga:1724.4046368313643
+2014: 
+Palk: 960.0 || Ühtlase koefitsiendiga:2264.429337939141
+2015: 
+Palk: 1056.0 || Ühtlase koefitsiendiga:2973.57135152551
