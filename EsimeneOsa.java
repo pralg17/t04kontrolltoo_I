@@ -20,12 +20,12 @@ public class EsimeneOsa {
 				System.out.println("\n Nende kolme arvu keskmine on " + keskmine(arv1, arv2, arv3) + "\n");
 			
 			} catch (Exception ex) {
-				System.out.println("\n Tundub et vähemalt üks sisestatud suurustest polnud arv. Proovi uuesti! \n");
+				System.out.println("\n Tundub et vÃ¤malt Ã¼ks sisestatud suurustest polnud arv. Proovi uuesti! \n");
 			}
 			
 		} else {
 			
-			System.out.println("\n Sisesta programmi välja kutsudes lõppu kolm arvu eraldades need tühikutega \n");
+			System.out.println("\n Sisesta programmi vÃ¤lja kutsudes lÃµppu kolm arvu, eraldades need tÃ¼hikutega \n");
 		
 		}
 	}
