@@ -1,15 +1,15 @@
 public class massiiv{	
 	public static void massiiv(){
-		int[] ajad={65, 58, 103, 87};
-		int summa=0;
-		for(int i=0; i<ajad.length; i++){
-			summa=ajad[i]+summa;
-			System.out.println(ajad[i]);
+		double[] kiirused={30.0, 60.0};
+		double summa=0;
+		double aeg=0;
+		for(int i=0; i<kiirused.length; i++){
+			summa=(1/kiirused[i])+summa; 
+			
 		}
+	
+		/*kesk kiirus*/System.out.println((kiirused.length)/summa*1.0 +" km/h");
 		
-		System.out.println(summa);
-		//Leidke keskmine mass
-		System.out.println(summa*1.0/ajad.length);
 	}
 	public static void main(String[] args){
 		massiiv();
