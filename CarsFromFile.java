@@ -5,10 +5,8 @@ public class CarsFromFile{
         new FileReader("Data.txt")
         );
         String rida=lugeja.readLine();
-        int loendur=0;
         PrintWriter kirjutaja = new PrintWriter(new FileWriter("Result.txt"));
         while(rida!=null){
-            loendur++;
             String[] r=rida.split(",");
             double s=Double.parseDouble(r[0]);
             double v=Double.parseDouble(r[1]);
