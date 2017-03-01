@@ -13,3 +13,4 @@ public class kaalutud{
 		System.out.println("Kaalutud keskmine on: " + keskmine(hinne1, hinne2, eap1, eap2));
 	}
 }
+//Kaalutud keskmine on: 3.625
