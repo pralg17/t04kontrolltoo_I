@@ -21,7 +21,56 @@ public class KKeskmine{
 		return K_Kesk_kogumiga;
 
 	}
-	public static void main(String[] args){
+	
+	public static double KK_Failist(String fnimi, int hindenr, int ainenr) throws IOException{
+		BufferedReader reader = new BufferedReader(new FileReader(fnimi));
+		String rida = reader.readLine();
+		rida = reader.readLine();
+		int hinne;
+		double korrutiste_summa = 0;
+		double ainepunktide_summa = 0;
+		double kk = 0;
+		List<Integer> hinded = new ArrayList<Integer>();
+		List<Integer> punktid = new ArrayList<Integer>();
+		while(rida!=null){
+			String[] m = rida.split(",");
+			String hindekontroll = m[hindenr];
+			rida = reader.readLine();
+			try{
+				punktid.add(Integer.parseInt(m[ainenr]));
+				if(hindekontroll.equals ("A")){
+					hinne = 5;
+					hinded.add(hinne);
+				} else if(hindekontroll.equals ("B")){
+					hinne = 4;
+					hinded.add(hinne);
+				} else if(hindekontroll.equals ("C")){
+					hinne = 3;
+					hinded.add(hinne);
+				} else if(hindekontroll.equals ("D")){
+					hinne = 2;
+					hinded.add(hinne);
+				} else if(hindekontroll.equals ("E")){
+					hinne = 1;
+					hinded.add(hinne);
+				} else if(hindekontroll.equals ("F")){
+					hinne = 0;
+					hinded.add(hinne);
+				}
+			} catch (Exception ex){
+				System.out.println("Andmetes on viga");
+			}
+		}
+		for(int i=0; i<hinded.size(); i++){
+			korrutiste_summa += hinded.get(i) * punktid.get(i);
+			ainepunktide_summa += punktid.get(i);
+		}
+		kk = korrutiste_summa/ainepunktide_summa;
+		reader.close();
+		return kk;
+	}
+	
+	public static void main(String[] args) throws IOException{
 		
 		//Esimene punkt
 		
@@ -43,11 +92,17 @@ public class KKeskmine{
 		for(int i=0; i<mitu; i++){
 			hinnete_kogumik[i] = scan.nextInt();
 		}
-		System.out.println("Kogumikes olevate andmete järgi on kaalutud keskmine: " + Kaalutud_Keskmine_Kogumikega(ainep_kogumik, hinnete_kogumik));
+		System.out.println("Kogumikes olevate andmete järgi on kaalutud keskmine: " + Kaalutud_Keskmine_Kogumikega(ainep_kogumik, hinnete_kogumik) + "\n");
 		
 		//Kolmas punkt
 		
-		
+		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
+		new FileOutputStream("Kaalutud_Keskmine.txt"), "utf-8"));
+		writer.write("Kaalutud keskmine on: " + KK_Failist("Ained.txt", 1, 2));
+		writer.close();
+		System.out.println("Kirjutamine lõpetatud");
+		System.out.println("Vaadake faili Kaalutud_Keskmine.txt, et näha kaalutud keskmist");
+
 	}
 }
 
@@ -70,5 +125,7 @@ Sisestage hinded:
 3
 Kogumikes olevate andmete järgi on kaalutud keskmine: 3.0
 
+Kirjutamine lõpetatud
+Vaadake faili Kaalutud_Keskmine.txt, et näha kaalutud keskmist
 */
 
