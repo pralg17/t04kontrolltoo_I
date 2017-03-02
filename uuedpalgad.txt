@@ -1,0 +1,5 @@
+2011: 1000.0
+2012: 1200.0 // Yhtlase koefitsiendiga: 1313.1658832117762
+2013: 1200.0 // Yhtlase koefitsiendiga: 1724.4046368313643
+2014: 960.0 // Yhtlase koefitsiendiga: 2264.429337939141
+2015: 1056.0 // Yhtlase koefitsiendiga: 2973.57135152551
