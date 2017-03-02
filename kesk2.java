@@ -5,7 +5,7 @@ public class kesk2{
 		for (int i=0; i<m.length; i++){
 			arv = arv*m[i];
 		}
-		return Math.pow(arv, aste);
+		return Math.pow(arv, 1.0/aste);
 	}
 	public static void main(String[] args){
 		int[] numbrid = {3, 2, 4, 5, 7};
@@ -13,5 +13,5 @@ public class kesk2{
 	}
 }
 /*
-Vastus on: 4.182119424E14
+Vastus on: 3.84464156815852
 */
