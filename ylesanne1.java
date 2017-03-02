@@ -7,13 +7,20 @@ public class ylesanne1{
 	public static void main(String[] args){
 		double a, b;
 		Scanner input = new Scanner(System.in);
+		
 		System.out.print("Sisestage esimene arv: ");
-		
 		a=input.nextInt();
-		System.out.print("Sisestage teine arv: ");
 		
+		System.out.print("Sisestage teine arv: ");
 		b=input.nextInt();
+		
 		System.out.println("Arvude ruutjuur on: " + ruutjuur(a,b));
 	}
 }
 
+/*
+[joosjuha@greeny t04kontrolltoo_I]$ java ylesanne1
+Sisestage esimene arv: 1
+Sisestage teine arv: 2
+Arvude ruutjuur on: 1.4142135623730951
+*/

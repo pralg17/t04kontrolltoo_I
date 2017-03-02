@@ -10,7 +10,12 @@ public class ylesanne2{
 	}
 		
 	public static void main(String[] args){
-		int[] arvud={1, 5, 2, 7, 3};
+		int[] arvud={3, 3, 7, 4, 5};
 		System.out.println("Vastus: "+korrutis(arvud));
 	}
 }
+
+/*
+[joosjuha@greeny t04kontrolltoo_I]$ java ylesanne2
+Vastus: 4.169405251041168
+*/
