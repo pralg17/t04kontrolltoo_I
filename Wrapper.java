@@ -23,6 +23,22 @@ public class Wrapper{
         System.out.println(hulknurk.eqLatDev(50));
         System.out.println(hulknurk.cenDistDev(10));
 
+//
+//        Külgede pikkused:
+//      [2.23606797749979, 1.4142135623730951, 2.23606797749979]
+//        Keskpunkti koordinaadid:
+//      [2.0, 2.0]
+//        Kontrollime, kas võrdkülgsus jääb järgmise protsendi piirdeisse:
+//        true
+//        Nüüd vaatame, kas punktide kaugus keskpaigast jääb järgmise protsendi ulatusse:
+//        false
+//        Samad näitajad hulknurga puhul:
+//      [2.8460498941515415, 4.833218389437829, 9.037698822156003, 8.140024569987489]
+//[     0.0, 1.75]
+//        false
+//        false
+
+
     }
 }
 
