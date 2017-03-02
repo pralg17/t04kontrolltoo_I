@@ -1,0 +1,7 @@
+Kaalutud keskmine
+
+* Koosta funktsioon, kus antakse ette kahe ainekursuse ainepunktid ja hinded. Arvuta nende põhjal kaalutud keskmine. 
+
+* Funktsioonile antakse ette kogumina õppeainete punktid ning teise kogumina nende ainete hinded. Leitakse kaalutud keskmine. 
+
+* Õppuri läbitud kursuste nimed, hinded (A-F) ja punktid loetakse sisse failist. Tulemus kaalutud keskmise näol kirjutatakse teise faili.
