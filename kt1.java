@@ -31,6 +31,20 @@ public class kt1{
 		System.out.println("75% v2iksemad: "+newArray[3]);
 		
 	}
-	
+/*	
+1
+2
+3
+4
+5
+6
+7
+9
+10
+Max: 1 Min: 10
+25% v2iksemad: 3
+50% v2iksemad: 5
+75% v2iksemad: 7
+*/
 	
 }
