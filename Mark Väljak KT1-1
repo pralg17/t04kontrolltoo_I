@@ -1,0 +1,19 @@
+public class KeskmineKiirus1 {
+
+    public double kaheKMKeskmineKiirus(double kiirus1, double kiirus2) {
+        return (kiirus1 + kiirus2) / 2;
+    }
+
+
+    public static void main(String[] args) {
+        KeskmineKiirus1 keskk = new KeskmineKiirus1();
+        System.out.println("Keskmine kiirus kahe km peale on " + keskk.kaheKMKeskmineKiirus(4.0, 5.0));
+
+ 
+    }
+}
+/* OUTPUT
+[markvalj@greeny Java]$ javac KeskmineKiirus1.java
+[markvalj@greeny Java]$ java KeskmineKiirus1
+Keskmine kiirus kahe km peale on 4.5
+*/
