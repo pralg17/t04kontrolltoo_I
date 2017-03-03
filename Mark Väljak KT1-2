@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+
+public class KeskmineKiirus2 {
+
+    
+
+    public ArrayList<Double> keskmisteKiirusteKogum() {
+        ArrayList<Double> keskmisteKiirusteKogumik = new ArrayList<Double>();
+        keskmisteKiirusteKogumik.add(4.0);
+        keskmisteKiirusteKogumik.add(5.0);
+        keskmisteKiirusteKogumik.add(8.0);
+        keskmisteKiirusteKogumik.add(19.0);
+        keskmisteKiirusteKogumik.add(14.0);
+        keskmisteKiirusteKogumik.add(1.0);
+        keskmisteKiirusteKogumik.add(8.0);
+        keskmisteKiirusteKogumik.add(14.0);
+        keskmisteKiirusteKogumik.add(12.0);
+        keskmisteKiirusteKogumik.add(22.0);
+        
+
+        return keskmisteKiirusteKogumik;
+    }
+
+    public static void main(String[] args) {
+        KeskmineKiirus2 keskk = new KeskmineKiirus2();
+        
+
+        int keskmisteKiirusteArv = keskk.keskmisteKiirusteKogum().size();
+        double summa = 0;
+		double counter = 0;
+        for (int i = 0; i < keskmisteKiirusteArv; i++) {
+            summa += keskk.keskmisteKiirusteKogum().get(i);
+			counter += 1.0;
+        }
+		double avgSpeeds = (summa / counter);
+        System.out.println("kogu tee läbimise keskmine kiirus: " + avgSpeeds);
+		
+
+    }
+}
+/* output
+[markvalj@greeny Java]$ javac KeskmineKiirus2.java
+^[[A[markvalj@greeny Java]$ java KeskmineKiirus2
+kogu tee läbimise keskmine kiirus: 10.7
+*/
