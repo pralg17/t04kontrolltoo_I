@@ -1,0 +1,2 @@
+Kiirus,Kaugus,Kaugus3s,Kaugus5m,Kaugus2h
+100,50,50.08333,58.333,250.0
