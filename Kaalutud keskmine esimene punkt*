@@ -1,0 +1,19 @@
+public class kontrolltoo_1 {
+	public static double eapKokku(int eap1, int eap2, int hinne1, int hinne2) {
+	   int eapd;
+	   double hinneKordaEap;
+	   double kaalutudKeskmine;
+       eapd = eap1+eap2;
+       hinneKordaEap = (hinne1*eap1)+(hinne2*eap2);
+       kaalutudKeskmine = hinneKordaEap/eapd;
+	   return kaalutudKeskmine;
+    }
+	public static void main(String[] args) {
+		int eap1 = 3;
+		int eap2 = 6;
+		int hinne1 = 4;
+		int hinne2 = 5;
+		double keskmine = eapKokku(eap1, eap2, hinne1, hinne2);
+	System.out.println("Kaalutud keskmine: " + keskmine);
+	}
+}
