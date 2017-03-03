@@ -1,41 +1,35 @@
 import java.util.Arrays;
+import java.util.Collections;
+
 class kt_1punkt{
-	public static void main(String args[]){
-    int array[] = new int[]{10, 11, 88, 2, 12, 120};
 	
-	Arrays.sort(array);
+	//Loon massiivi suvaliste numbritega.
+	public static void main(String[] args) {
+    Integer[] numbers = { 8, 2, 6, 7, 0, 1, 4, 9, 5, 3 };
+	
+	//Sorteerin massiivi kasvavas järjekorras.
+	Arrays.sort(numbers);
 
-	System.out.println("The sorted int array is:");
-	for (int number : array) {
-	System.out.println("Number = " + number);
+	System.out.println("Järjestatud massiiv:");
+	for (int number : numbers) {
+	System.out.println(number);
 		
-	}
-	int max = getMax(array);
-	System.out.println("Maximum Value is: "+max);
- 
-	int min = getMin(array);
-	System.out.println("Minimum Value is: "+min);
-
-}
-
-	public static int getMax(int[] inputArray){ 
-		int maxValue = inputArray[0]; 
-		for(int i=1;i < inputArray.length;i++){ 
-		  if(inputArray[i] > maxValue){ 
-				maxValue = inputArray[i]; 
-			} 
-		} 
-		return maxValue; 
-	}
- 
-	public static int getMin(int[] inputArray){ 
-		int minValue = inputArray[0]; 
-		for(int i=1;i<inputArray.length;i++){ 
-		  if(inputArray[i] < minValue){ 
-				minValue = inputArray[i]; 
-			} 
-		} 
-		return minValue; 
-	} 
-}
+		}
 	
+	//Leian massiivi väikseima ja suurima numbri.
+	int min = (int) Collections.min(Arrays.asList(numbers));
+    int max = (int) Collections.max(Arrays.asList(numbers));
+	
+	//Leian 25%, 50% ja 75% väiksemad.
+	double number1=numbers[numbers.length/4];
+	double number2=numbers[numbers.length/2];
+	double number3=numbers[(numbers.length*3)/4];
+		
+	System.out.println("Min number: " + min);
+	System.out.println("Väiksemad 25%: " + number1);
+	System.out.println("Väiksemad 50%: " + number2);
+	System.out.println("Väiksemad 75%: " + number3);
+	System.out.println("Max number: " + max);
+	
+	}
+}
