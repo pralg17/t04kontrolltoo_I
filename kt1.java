@@ -1,32 +1,25 @@
-class kt1{
-	public static void main(String args[]){
-    int array[] = new int[]{1, 4, 20, 9, 32, 100};
- 
-		int max = getMax(array);
-		System.out.println("Maximum Value is: "+max);
- 
-		int min = getMin(array);
-		System.out.println("Minimum Value is: "+min);
-	
-	}
+import java.util.Arrays;
 
-	public static int getMax(int[] inputArray){ 
-		int maxValue = inputArray[0]; 
-		for(int i=1;i < inputArray.length;i++){ 
-		  if(inputArray[i] > maxValue){ 
-				maxValue = inputArray[i]; 
-			} 
-		} 
-		return maxValue; 
+public class kt1{
+	
+	public static void main(String[] args){
+	//loon massiivi
+		int[] array = new int[]{1, 3, 7, 5, 4, 6, 9, 2, 10};
+		arraySort(array);
 	}
- 
-	 public static int getMin(int[] inputArray){ 
-		int minValue = inputArray[0]; 
-		for(int i=1;i<inputArray.length;i++){ 
-		  if(inputArray[i] < minValue){ 
-				minValue = inputArray[i]; 
-			} 
-		} 
-		return minValue; 
-	} 
+	
+	//sordin
+	public static void arraySort(int[] array){
+		
+		Arrays.sort(array);
+		for(int i=0; i<array.length; i++){
+			
+			System.out.println(array[i]);
+		
+		}
+		int maxValue = array[array.length-1];
+		int minValue = array[0];
+		System.out.println("Max: "+maxValue+" Min: "+minValue);
+	}
+	
 }
