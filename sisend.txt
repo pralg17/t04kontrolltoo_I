@@ -1,0 +1,2 @@
+aastaPalk, aasta1, aasta2, aasta3, aasta4, aasta5
+1000,1.1,1.2,0.9,1.7,0.7
