@@ -1,0 +1,22 @@
+Auto1 kaugus mnt algusest on 70.0 km ja kiirus on 90.0 km/h.
+ Tema asukoht 3 sekundi pärast on 70.075 km,
+ 5 minuti pärast 77.5 km,
+ ja 2 tunni pärast 250.0 km.
+
+Auto2 kaugus mnt algusest on 85.0 km ja kiirus on 95.0 km/h.
+ Tema asukoht 3 sekundi pärast on 85.07916666666667 km,
+ 5 minuti pärast 92.91666666666667 km,
+ ja 2 tunni pärast 275.0 km.
+
+
+Auto1 kaugus mnt algusest on 10.0 km ja kiirus on 50.0 km/h.
+ Tema asukoht 3 sekundi pärast on 10.041666666666666 km,
+ 5 minuti pärast 14.166666666666668 km,
+ ja 2 tunni pärast 110.0 km.
+
+Auto2 kaugus mnt algusest on 8.0 km ja kiirus on 55.0 km/h.
+ Tema asukoht 3 sekundi pärast on 8.045833333333333 km,
+ 5 minuti pärast 12.583333333333332 km,
+ ja 2 tunni pärast 118.0 km.
+
+
