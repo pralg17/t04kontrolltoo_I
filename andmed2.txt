@@ -1,0 +1,5 @@
+Aine: Programmeerimise alused| Keskmine hinne pärast selle tulemuse sissekandmist: 5.0
+Aine: Teoreetiline informaatika| Keskmine hinne pärast selle tulemuse sissekandmist: 4.6
+Aine: Algoritmid| Keskmine hinne pärast selle tulemuse sissekandmist: 4.142857142857143
+Aine: Andmebaasid| Keskmine hinne pärast selle tulemuse sissekandmist: 3.764705882352941
+Mida tegelikult ülesandes taheti: 3.764705882352941
