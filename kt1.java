@@ -19,7 +19,18 @@ public class kt1{
 		}
 		int maxValue = array[array.length-1];
 		int minValue = array[0];
-		System.out.println("Max: "+maxValue+" Min: "+minValue);
+		
+	//väljastan teises punktis nõutud väärtused
+		int value1 = array[(int)(array.length*0.25)];
+		int value2 = array[(int)(array.length*0.5)];
+		int value3 = array[(int)(array.length*0.75)];
+		int[] newArray = new int[]{minValue, value1, value2, value3, maxValue};
+		System.out.println("Max: "+newArray[0]+" Min: "+newArray[newArray.length-1]);
+		System.out.println("25% v2iksemad: "+newArray[1]);
+		System.out.println("50% v2iksemad: "+newArray[2]);
+		System.out.println("75% v2iksemad: "+newArray[3]);
+		
 	}
+	
 	
 }
