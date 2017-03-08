@@ -1,4 +1,6 @@
 import java.util.*;
+import java.util.ArrayList;
+
 
 public class KarpJaVurrud{//TulpadeAndmed
 
@@ -8,8 +10,6 @@ public class KarpJaVurrud{//TulpadeAndmed
         this.andmed=andmemassiiv;
         //massivi järjestamine
         Arrays.sort(andmed);
-        int size = andmemassiiv.length;
-
     }
 
     public int[] kysiAndmed(){
@@ -40,11 +40,21 @@ public class KarpJaVurrud{//TulpadeAndmed
 
     }
 
-    //millest 50% väiksemad
-    public int _50(){
-        int size = andmed.length;
-
+    public int on25v2iksemad(){
+        int asd = (int) (0.25 * andmed.length);
+        return andmed[asd];
     }
+
+    public int on50v2iksemad(){
+        int asd = (int) (0.5 * andmed.length);
+        return andmed[asd];
+    }
+
+    public int on75v2iksemad(){
+        int asd = (int) (0.75 * andmed.length);
+        return andmed[asd];
+    }
+
 
 
 }
