@@ -1,0 +1,6 @@
+Aine,hinne,puntkid
+Veebiprogrammeerimine,A,6
+Andmebaasideprojekteerimine,B,4
+ELUprojekt,C,6
+Veebiraamistikud,C,4
+Python,A,3
